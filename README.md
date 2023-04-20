@@ -1,2 +1,2 @@
-# trybe-exercicios
-# Meu repositório de exercícios
+# Exercícios da Trybe
+Meu repositório de exercícios do curso de Desenvolvimento Web
