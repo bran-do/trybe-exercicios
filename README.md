@@ -15,4 +15,8 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 ##### Seção 2: Introdução à HTML & CSS
 
-- [ ] 1-1: _HTML & CSS - Estruturas de páginas_
+- [X] 2-1: _HTML & CSS - Estruturas de página_
+- [X] 2-2: _HTML & CSS - Primeiros passos em CSS_
+- [X] 2-3: _HTML & CSS - Seletores e posicionamento_
+- [X] 2-4: _HTML & CSS - HTML Semântico_
+- [X] 2-5: _HTML & CSS - [Projeto: Lessons Learned](https://github.com/tryber/sd-033-a-project-lessons-learned/pull/22)_
