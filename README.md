@@ -22,7 +22,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 2-5: _HTML & CSS - [Projeto: Lessons Learned](https://github.com/tryber/sd-033-a-project-lessons-learned/pull/22)_
 
 ##### Seção 3: Introdução a JavaScript
-- [ ] 3-1: _JavaScript - Primeiros passos_
+- [X] 3-1: _JavaScript - Primeiros passos_
 - [ ] 3-2: _JavaScript - Array e loop for_
 - [ ] 3-3: _JavaScript - Funções_
 - [ ] 3-4: _JavaScript - Objetos_
