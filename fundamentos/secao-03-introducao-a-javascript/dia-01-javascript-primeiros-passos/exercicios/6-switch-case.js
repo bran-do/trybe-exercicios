@@ -1,11 +1,30 @@
-/*
-6 - Utilize switch/case para escrever um código que receba o nome de uma peça de xadrez e retorne os movimentos que ela pode fazer.
+// Movimentos do xadrez + input non-sensitive case
 
-Como desafio, escreva um código para funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+let pieceInput = "KinG";
+let pieceLC = pieceInput.toLowerCase();
 
-Como dica, você pode pesquisar uma função que faça uma string ficar com todas as letras minúsculas (lower case).
+switch (pieceLC) {
+    case 'pawn':
+        console.log('1 forward');
+        break;
 
-Se a peça passada for inválida, o código deve retornar uma mensagem de erro.
+    case 'knight':
+        console.log('L shape');
+        break;
+    
+    case 'bishop':
+        console.log('diagonals');
+        break;
 
-Exemplo: bishop (bispo) -> diagonals (diagonais)
-*/
+    case 'rook':
+        console.log('forward');
+        break;
+    
+    case 'queen':
+        console.log('diagonals and forward');
+        break;
+
+    case 'king':
+        console.log('1 around');
+        break;
+}
