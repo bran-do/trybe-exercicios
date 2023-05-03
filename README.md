@@ -13,7 +13,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 1-2: _Git - O que é e para que serve_
 - [X] 1-3: _Git & GitHub - Entendendo os comandos_
 
-##### Seção 2: Introdução à HTML & CSS
+##### Seção 2: Introdução a HTML & CSS
 
 - [X] 2-1: _HTML & CSS - Estruturas de página_
 - [X] 2-2: _HTML & CSS - Primeiros passos em CSS_
