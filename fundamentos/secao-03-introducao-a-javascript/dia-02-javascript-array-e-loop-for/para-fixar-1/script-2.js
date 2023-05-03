@@ -1,4 +1,4 @@
-// Encontrar o index de 'Portfólio'
+// Encontrar o index de 'Portfólio';
 
 let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 let indexOfPortfolio = menu.indexOf('Portfólio');
