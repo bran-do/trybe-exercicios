@@ -1,7 +1,6 @@
-// Incluir clientes no TrybeBank
-
 let clientesTrybeBank = ['Ada', 'John', 'Gus'];
 
+// Incluir clientes no TrybeBank
 function incluiCliente(nome) {
     if (typeof(nome) === 'string') {
         clientesTrybeBank.push(nome);
@@ -20,7 +19,6 @@ console.log(incluiCliente(6));
 console.log("");
 
 // Excluir clientes no TrybeBank
-
 function excluiCliente(nome) {
     if (typeof(nome) === 'string') {
         if (clientesTrybeBank.includes(nome)) {
