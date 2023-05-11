@@ -23,7 +23,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 ##### Seção 3: Introdução a JavaScript
 - [X] 3-1: _JavaScript - Primeiros passos_
-- [X] 3-2: _JavaScript - Array e loop for_
+- [X] 3-2: _JavaScript - Array e Loop For_
 - [X] 3-3: _JavaScript - Funções_
 - [X] 3-4: _JavaScript - Objetos_
 - [X] 3-5: _JavaScript ES6 - let, const, arrow functions e template literals_
