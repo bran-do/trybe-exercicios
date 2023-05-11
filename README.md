@@ -8,13 +8,13 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 ## Fundamentos do Desenvolvimento Web ⏳
 
 ##### Seção 1: Unix, Shell e Git
->
+
 >- [X] 1-1: _Unix & Shell_
 >- [X] 1-2: _Git - O que é e para que serve_
 >- [X] 1-3: _Git & GitHub - Entendendo os comandos_
 
 ##### Seção 2: Introdução a HTML & CSS
->
+
 >- [X] 2-1: _HTML & CSS - Estruturas de página_
 >- [X] 2-2: _HTML & CSS - Primeiros passos em CSS_
 >- [X] 2-3: _HTML & CSS - Seletores e posicionamento_
@@ -22,7 +22,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 >- [X] 2-5: _Projeto: [Lessons Learned](https://github.com/tryber/sd-033-a-project-lessons-learned/pull/22)_
 
 ##### Seção 3: Introdução a JavaScript
->
+
 >- [X] 3-1: _JavaScript - Primeiros passos_
 >- [X] 3-2: _JavaScript - Array e Loop For_
 >- [X] 3-3: _JavaScript - Funções_
