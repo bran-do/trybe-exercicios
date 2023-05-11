@@ -30,9 +30,9 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 3-6: _Projeto: [Playground Functions](https://github.com/tryber/sd-033-a-project-playground-functions/pull/123)_
 
 ##### Seção 4: JavaScript: DOM, Eventos e WebStorage
-- [X] 2-1: _JavaScript - DOM e Seletores_
-- [ ] 2-2: _JavaScript - Trabalhando com elementos_
-- [ ] 2-3: _JavaScript - Eventos_
-- [ ] 2-4: _JavaScript - Web Storage_
-- [ ] 2-5: _Projeto: Arte com pixels_
-- [ ] 2-6: _Projetos bônus_
+- [X] 4-1: _JavaScript - DOM e Seletores_
+- [ ] 4-2: _JavaScript - Trabalhando com elementos_
+- [ ] 4-3: _JavaScript - Eventos_
+- [ ] 4-4: _JavaScript - Web Storage_
+- [ ] 4-5: _Projeto: Arte com pixels_
+- [ ] 4-6: _Projetos bônus_
