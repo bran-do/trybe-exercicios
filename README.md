@@ -19,7 +19,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 2-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 2-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 2-4: _HTML & CSS - HTML Semântico_
-- [X] 2-5: Projeto: [Lessons Learned](https://github.com/tryber/sd-033-a-project-lessons-learned/pull/22)_
+- [X] 2-5: _Projeto: [Lessons Learned](https://github.com/tryber/sd-033-a-project-lessons-learned/pull/22)_
 
 ##### Seção 3: Introdução a JavaScript
 - [X] 3-1: _JavaScript - Primeiros passos_
