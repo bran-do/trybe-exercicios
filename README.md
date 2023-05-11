@@ -19,12 +19,20 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 2-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 2-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 2-4: _HTML & CSS - HTML Semântico_
-- [X] 2-5: _HTML & CSS - [Projeto: Lessons Learned](https://github.com/tryber/sd-033-a-project-lessons-learned/pull/22)_
+- [X] 2-5: _HTML & CSS - Proejto: [Lessons Learned](https://github.com/tryber/sd-033-a-project-lessons-learned/pull/22)_
 
 ##### Seção 3: Introdução a JavaScript
 - [X] 3-1: _JavaScript - Primeiros passos_
 - [X] 3-2: _JavaScript - Array e loop for_
-- [ ] 3-3: _JavaScript - Funções_
-- [ ] 3-4: _JavaScript - Objetos_
-- [ ] 3-5: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 3-6: _Projeto: Playground Functions_
+- [X] 3-3: _JavaScript - Funções_
+- [X] 3-4: _JavaScript - Objetos_
+- [X] 3-5: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [X] 3-6: _Projeto: Projeto: [Playground Functions](https://github.com/tryber/sd-033-a-project-playground-functions/pull/123)_
+
+##### Seção 4: JavaScript: DOM, Eventos e WebStorage
+- [X] 2-1: _JavaScript - DOM e Seletores_
+- [ ] 2-2: _JavaScript - Trabalhando com elementos_
+- [ ] 2-3: _JavaScript - Eventos_
+- [ ] 2-4: _JavaScript - Web Storage_
+- [ ] 2-5: _Projeto: Arte com pixels_
+- [ ] 2-6: _Projetos bônus_
