@@ -15,4 +15,4 @@ primeiroFilhoDoFilho.append(filho2);
 
 // A partir desse filho criado, acesse terceiroFilho.
 filhoCriado = document.querySelector('#primeiroFilhoDoFilho').firstChild;
-terceiroFilho = document.querySelector(filhoCriado).parentElement.parentElement.nextElementSibling;
+terceiroFilho = filhoCriado.parentElement.parentElement.nextElementSibling;
