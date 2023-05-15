@@ -17,13 +17,17 @@ firstLi.addEventListener("click", techClassAdd);
 secondLi.addEventListener("click", techClassAdd);
 thirdLi.addEventListener("click", techClassAdd);
 
-
 function techClassAdd() {
     firstLi.classList.remove('tech');
     secondLi.classList.remove('tech');
     thirdLi.classList.remove('tech');
 
-    event.target.className = 'tech';  
+    event.target.className = 'tech';
+    let position = '';
+
+    event.target === firstLi && (input.placeholder = "Alterar a primeira tecnologia"); 
+    event.target === secondLi && (input.placeholder = "Alterar a segunda tecnologia"); 
+    event.target === thirdLi && (input.placeholder = "Alterar a terceira tecnologia"); 
 }
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como é possível fazer isso? Dica: Lembre-se do método `.classList.remove`.
 
@@ -52,13 +56,13 @@ function redirect() {
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo.
 myWebpage.addEventListener("mouseover", colorChange);
-myWebpage.addEventListener("mouseleave", colorBack);
+myWebpage.addEventListener("mouseleave", colorReset);
 
 function colorChange() {
     myWebpage.style.color = 'green';
 }
 
-function colorBack() {
+function colorReset() {
     myWebpage.removeAttribute('style');
 }
 // Segue abaixo um exemplo de uso do event.target.
