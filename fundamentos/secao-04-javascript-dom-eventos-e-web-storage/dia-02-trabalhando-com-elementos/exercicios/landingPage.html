@@ -97,6 +97,7 @@
       
       // 8- Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, e assim por diante. Essa lista deve ser filha do section criado no passo 6;
       const ul = document.createElement('ul');
+      ul.className = 'list-item';
       const liContent = [
         'um',
         'dois',
@@ -127,10 +128,37 @@
         let title = h3Content[i];
         let h3 = document.createElement('h3');
         h3.innerText = title;
+        h3.className = 'description';
 
         main.appendChild(h3);
       }
+      
+      // *** BÔNUS ***
+      // 11- Adicione a classe title na tag h1 criada;
+      h1.className = 'title';
 
+      // 12- Adicione a classe description nas 3 tags h3 criadas;
+      /* >>> Feito no 'for' do exercício 9;; */
+      
+      // 13- Remova a section criada no passo 5 (aquela que possui a classe left-content) por meio da função .removeChild();
+      main.removeChild(section2);
+
+      // 14- Centralize a section criada no passo 6 (aquela que possui a classe right-content).
+      section3.style.marginRight = 'auto';
+
+      // 15- Troque a cor de fundo do elemento-pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+      section1.parentElement.style.backgroundColor = 'green';
+
+      // 16- Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+      let listItem = document.querySelector('.list-item');
+      let numberListItem = document.querySelectorAll('.list-item li')
+      for (i = 0; i < numberListItem.length; i += 1) {
+        let liItem = numberListItem[i];
+        
+        if (liItem.innerText === 'nove' || liItem.innerText === 'dez') {
+          listItem.removeChild(liItem)
+        }
+      }
     </script>
   </body>
 </html>
