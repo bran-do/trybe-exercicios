@@ -1,0 +1,23 @@
+.form-group {
+    margin-left: 10px;
+}
+
+.form-control {
+    width: 400px;
+}
+
+.form-check {
+    margin-left: 5px;
+}
+
+.btn-primary {
+    margin-left: 5px;
+}
+
+#date {
+    width: 150px;
+}
+
+h1 {
+    margin-left: 5px;
+}
