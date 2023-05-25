@@ -1,0 +1,148 @@
+/* 
+Exercício 1 -
+Adicione uma propriedade flex-basis aos containers:
+
+Do logotipo com o tamanho de 268px;
+Do container do menu com o tamanho de 500px.
+
+//
+
+Exercício 2 -
+Adicione uma propriedade Flexbox que modifica a ordem em que o logo e os itens do menu aparecem na tela. 
+
+// 
+
+Exercício 3 -
+Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível.
+
+//
+
+Exercício 4 -
+Utilize a propriedade align-self no elemento correto para que o header da página tenha o seguinte comportamento:
+(Centralizar os links no container)
+
+// 
+
+Exercício 5 - 
+Aplique no seu container aside uma base de 350px. 
+
+//
+
+Exercício 6 - 
+Nos elemento aside, centralize e expanda seu conteúdo. 
+
+//
+
+Exercício 7 -
+Adicione uma propriedade ao seu container de filmes para que ele tenha uma base de 700px. 
+Também adicione para os elementos filhos do seu card uma base de 16%.
+
+// 
+
+Exercício 8 - 
+No container de filmes aplique uma propriedade para expandi-lo, essa propriedade deve ter o valor 10.
+
+//
+
+Exercício 9 -
+Faça com que suas div do container de filmes ocupe todo o espaço em branco.
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+  }
+  
+  body {
+    background-color: rgb(247, 247, 247);
+  }
+  
+  .header-container {
+    background-color: #5C687C;
+    display: flex;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    flex-basis: 268px;
+  }
+  
+  .menu-container {
+    display: flex;
+    flex-basis: 500px;
+    order: 1;
+    flex-grow: 1;
+    align-self: center;
+  }
+  
+  .menu-container ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .menu-container li {
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    list-style: none;
+    margin-right: 10px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .movie-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 700px;
+    flex-grow: 10;
+  }
+  
+  .movie-container h2 {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card-container div {
+    align-items: center;
+    background-color: #5C687C;
+    border: black solid 1px;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    margin: 10px;
+    flex-basis: 16%;
+    flex-grow: 1;
+  }
+  
+  .aside-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex-basis: 350px;
+    align-self: center;
+    flex-grow: 1;
+  }
+  
+  .aside-container h3, h4 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .aside-container p {
+    margin: 10px 0;
+    text-align: justify;
+  }
