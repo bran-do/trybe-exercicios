@@ -5,7 +5,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 > ###### A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho.  
 > ###### O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web ⏳
+## Fundamentos do Desenvolvimento Web ✅
 
 
 ##### Seção 1: Unix, Shell e Git
@@ -37,5 +37,49 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 4-2: _JavaScript - Trabalhando com elementos_
 - [X] 4-3: _JavaScript - Eventos_
 - [X] 4-4: _JavaScript - Web Storage_
-- [ ] 4-5: _Projeto: Arte com pixels_
-- [ ] 4-6: _Projetos bônus_
+- [X] 4-5: _Projeto: Arte com pixels_
+
+##### Seção 5: HTML e CSS: Forms, Flexbox e Responsivo
+
+- [X] 5-1: _HTML & CSS - Forms_
+- [X] 5-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [X] 5-3: _CSS Flexbox - Parte 1_
+- [X] 5-4: _CSS Flexbox - Parte 2_
+- [X] 5-5: _Responsividade_
+- [X] 5-6: _Projeto: Trybewarts_
+
+##### Seção 6: Introdução ao JavaScript ES6 e Testes Unitários
+
+- [X] 6-1: _Fluxo de exceções_
+- [X] 6-2: _Primeiros passos em Jest_
+- [X] 6-3: _Matchers e cobertura de código_
+- [X] 6-4: _Projeto: JavaScript Testes Unitários_
+
+##### Seção 7: Higher Order Functions do JavaScript ES6
+- [x] 7-1: _Introdução a Higher Order Functions_
+- [X] 7-2: _Higher Order Functions: sort e map_
+- [X] 7-3: _Higher Order Functions: filter e reduce_
+- [X] 7-4: _JavaScript ES6: spread operator, rest parameters e object destructuring_
+- [X] 7-5: _JavaScript ES6: array destructuring, default destructuring, object property shorthand e default parameters_
+- [X] 7-6: _Projeto: Zoo Functions_
+
+
+## Front-end ⏳
+
+
+##### Seção 1: Introdução ao Front-end e JavaScript assíncrono
+- [X] 1-1: _Ambiente de desenvolvimento_
+- [X] 1-2: _JavaScript assíncrono: Promises e fetch_
+- [X] 1-3: _Revisão: Casa de Câmbio_
+- [X] 1-4: _Async, await e testes assíncronos_
+- [X] 1-5: _Projeto: iChoveu_
+
+##### Seção 2: Introdução ao React
+- [X] 2-1: _Introdução ao React e ao TypeScript_
+- [X] 2-2: _Componentes React e Props_
+- [X] 2-3: _Avançando em componentes_
+- [X] 2-4: _Revisão: Solar System_
+- [X] 2-5: _Estados e eventos_
+- [X] 2-6: _Formulários_
+- [X] 2-7: _Revisão: Store Back Office_
+- [X] 2-8: _Projeto: Password Manager_
