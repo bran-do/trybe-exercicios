@@ -10,10 +10,11 @@ const chiron = ['Chiron', 'Bugatti', 2016];
 // escreva toObject abaixo
 
 const toObject = (array) => {
+  [ carName, carBrand, year ] = array;
   return {
-    carName: array[0],
-    carBrand: array[1],
-    year: array[2],
+    carName,
+    carBrand,
+    year,
   }
 }
 
