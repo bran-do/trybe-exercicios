@@ -16,16 +16,16 @@ O protótipo da aplicação está [nesse link](https://www.figma.com/file/H3gBEi
 - [X] Criar tags semânticas no HTML.
 
 ### 3. Interação com API
-- [ ] O endpoint da API que deverá ser usada é `https://api.exchangerate.host/latest?base=${moeda}`.
+- [X] O endpoint da API que deverá ser usada é `https://api.exchangerate.host/latest?base=${moeda}`.
   ##### OBS: estarei usando a FreecurrencyAPI, uma vez que ExchangeRate.host não dispõe mais os valores de forma gratuita.
-- [ ] A moeda a ser pesquisada deverá ser passada como o parâmetro `moeda` do _endpoint_.
-- [ ] Todas as moedas deverão ser listadas na tela.
+- [X] A moeda a ser pesquisada deverá ser passada como o parâmetro `moeda` do _endpoint_.
+- [X] Todas as moedas deverão ser listadas na tela.
 > [Link da documentação da API](https://exchangerate.host/#/docs) caso necessário
 
 ### 4. Tratamento de Erro
-- [ ] Você deve usar o [Sweet Alert 2](https://sweetalert2.github.io/) para as mensagens de Erro.
-- [ ] Um erro deverá aparecer quando nenhuma moeda é passada.
-- [ ] Um erro deverá aparecer quando uma moeda inexistente é passada.
+- [X] Você deve usar o [Sweet Alert 2](https://sweetalert2.github.io/) para as mensagens de Erro.
+- [X] Um erro deverá aparecer quando nenhuma moeda é passada.
+- [X] Um erro deverá aparecer quando uma moeda inexistente é passada.
 
 ### 5. Estilização (Bônus)
 - [ ] Implementação do [protótipo de alta fidelidade](https://www.figma.com/file/H3gBEiF0F94VESCGx9DD17/Casa-de-C%C3%A2mbio?node-id=0%3A1)
