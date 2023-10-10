@@ -83,3 +83,35 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 2-6: _Formulários_
 - [X] 2-7: _Revisão: Store Back Office_
 - [X] 2-8: _Projeto: Password Manager_
+
+##### Seção 3: Aprofundando no React
+- [X] 3-1: _React Router_
+- [X] 3-2: _useEffect_
+- [X] 3-3: _Revisão: Clonando o Twitter_
+- [X] 3-4: _Projeto: Trybetunes_
+
+##### Seção 4: Testes automatizados com React Testing Library
+- [X] 4-1: _Introdução à React Testing Library_
+- [X] 4-2: _RTL Mocks_
+- [X] 4-3: _Testando com React Router_
+- [X] 4-4: _Projeto: Testes em React_
+
+##### Seção 5: Estilização e metodologia ágil
+- [X] 5-1: _CSS Modules_
+- [X] 5-2: _Styled Components_
+- [X] 5-3: _Metodologias ágeis_
+- [X] 5-4: _Projeto: Frontend Online Store_
+
+##### Seção 6: Gerenciamento de estado com Redux
+- [X] 6-1: _Introdução ao Redux - O estado global da aplicação_
+- [X] 6-2: _Usando o Redux no React_
+- [X] 6-3: _Revisão: Usando o Redux no React_
+- [X] 6-4: _Actions assíncronas do Redux no React_
+- [X] 6-5: _Testes em React-Redux_
+- [X] 6-6: _Projeto: TrybeWallet_
+
+##### Seção 7: Componentes de classe, Context API e custom hooks
+- [X] 7-1: _Componentes de classe_
+- [X] 7-2: _Context API_
+- [X] 7-3: _Hooks customizados_
+- [X] 7-4: _Projeto: Star Wars_  
