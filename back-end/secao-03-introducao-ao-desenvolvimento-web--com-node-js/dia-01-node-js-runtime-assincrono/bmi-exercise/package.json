@@ -1,0 +1,15 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "Cálculo de IMC utilizando o Node.js",
+  "main": "bmi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bmi": "node bmi.js"
+  },
+  "author": "Felipe Brandão",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
