@@ -9,13 +9,11 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 
 ##### Seção 1: Unix, Shell e Git
-
 - [X] 1-1: _Unix & Shell_
 - [X] 1-2: _Git - O que é e para que serve_
 - [X] 1-3: _Git & GitHub - Entendendo os comandos_
 
 ##### Seção 2: Introdução a HTML & CSS
-
 - [X] 2-1: _HTML & CSS - Estruturas de página_
 - [X] 2-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 2-3: _HTML & CSS - Seletores e posicionamento_
@@ -23,7 +21,6 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 2-5: _Projeto: [Lessons Learned](https://github.com/tryber/sd-033-a-project-lessons-learned/pull/22)_
 
 ##### Seção 3: Introdução a JavaScript
-
 - [X] 3-1: _JavaScript - Primeiros passos_
 - [X] 3-2: _JavaScript - Array e Loop For_
 - [X] 3-3: _JavaScript - Funções_
@@ -32,7 +29,6 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 3-6: _Projeto: [Playground Functions](https://github.com/tryber/sd-033-a-project-playground-functions/pull/123)_
 
 ##### Seção 4: JavaScript: DOM, Eventos e WebStorage
-
 - [X] 4-1: _JavaScript - DOM e Seletores_
 - [X] 4-2: _JavaScript - Trabalhando com elementos_
 - [X] 4-3: _JavaScript - Eventos_
@@ -40,7 +36,6 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 4-5: _Projeto: Arte com pixels_
 
 ##### Seção 5: HTML e CSS: Forms, Flexbox e Responsivo
-
 - [X] 5-1: _HTML & CSS - Forms_
 - [X] 5-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [X] 5-3: _CSS Flexbox - Parte 1_
@@ -49,7 +44,6 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 5-6: _Projeto: Trybewarts_
 
 ##### Seção 6: Introdução ao JavaScript ES6 e Testes Unitários
-
 - [X] 6-1: _Fluxo de exceções_
 - [X] 6-2: _Primeiros passos em Jest_
 - [X] 6-3: _Matchers e cobertura de código_
@@ -64,7 +58,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 7-6: _Projeto: Zoo Functions_
 
 
-## Front-end ⏳
+## Front-end ✅
 
 
 ##### Seção 1: Introdução ao Front-end e JavaScript assíncrono
@@ -114,4 +108,26 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 7-1: _Componentes de classe_
 - [X] 7-2: _Context API_
 - [X] 7-3: _Hooks customizados_
-- [X] 7-4: _Projeto: Star Wars_  
+- [X] 7-4: _Projeto: Star Wars_
+
+##### Seção 8: App de Receitas
+- [X] 8-1: _Projeto: App de Receitas_
+
+
+## Back-end ⏳
+
+
+##### Seção 1: Docker
+- [X] 1-1: _Utilizando containers no Docker_
+- [X] 1-2: _Manipulando imagens no Docker_
+- [X] 1-3: _Orquestrando containers com o Docker Compose_
+- [X] 1-4: _Projeto: Docker Todo-List_
+
+##### Seção 2: Introdução à SQL
+- [X] 2-1: _Introdução ao banco de dados_
+- [X] 2-2: _Como atualizar e remover dados de um banco_
+- [X] 2-3: _Banco de dados: relacionamentos, pt. 1_
+- [X] 2-4: _Banco de dados: relacionamentos, pt. 2_
+- [X] 2-5: _Banco de dados: relacionamentos, pt. 3 e relatórios avançados_
+- [X] 2-6: _Projeto: Trybefy_ 
+
