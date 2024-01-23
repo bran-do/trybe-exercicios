@@ -1,1 +1,0 @@
-Dessa vez, um texto escrito com o fs.writeFile!
