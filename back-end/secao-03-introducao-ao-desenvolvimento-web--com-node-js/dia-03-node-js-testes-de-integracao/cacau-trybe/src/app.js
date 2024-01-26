@@ -3,6 +3,16 @@ const cacauTrybe = require('./cacauTrybe');
 
 const app = express();
 
+app.get('/chocolates/search', async (req, res) => {
+  const term = req.query.name;
+  const chocolates = await cacauTrybe.getAllChocolates();
+  const foundChocolates = chocolates.filter((chocolate) =>
+    chocolate.name.toLowerCase().includes(term.toLowerCase()));
+
+  res.status(foundChocolates.length === 0 ? 404 : 200)
+    .json(foundChocolates);
+});
+
 app.get('/chocolates', async (req, res) => {
   const chocolates = await cacauTrybe.getAllChocolates();
   res.status(200).json({ chocolates });
