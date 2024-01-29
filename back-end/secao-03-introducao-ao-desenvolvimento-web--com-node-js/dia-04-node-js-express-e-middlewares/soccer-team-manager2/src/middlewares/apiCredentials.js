@@ -8,10 +8,10 @@ async function apiCredentials(req, res, next) {
 
   if (token in authorized) {
     // Se tudo der certo, o middleware passará adiante os times contidos naquele token.
-    req.teams = authorized[token];
+    req.userToken = authorized[token];
     next();
   } else {
-    res.sendStatus(401).json({ message: "Invalid or expired token." });
+    res.sendStatus(401).json({ message: 'Invalid or expired token.' });
   }
 }
 

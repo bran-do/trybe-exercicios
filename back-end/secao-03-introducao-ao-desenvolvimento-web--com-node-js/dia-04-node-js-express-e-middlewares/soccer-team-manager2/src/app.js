@@ -29,16 +29,18 @@ app.get('/teams/:id', existingId, (req, res) => {
 
 // Definindo método POST para cadastrar novos times através de um arquivo JSON
 app.post('/teams', validateTeam, (req, res) => {
+  
+  // Antes de mais nada, verifica se outro time já não possui as mesmas iniciais requeridas
+  if (teams.some((t) => t.initials === req.body.initials)) {
+    return res.status(422).json({ message: "These initials are already in use by another team." });
+  };
 
-  // Antes de mais nada, verifica se já existe um time com as inicias fornecidas
-  if (
-    req.teams.teams.includes(req.body.initials)
-    && teams.every((t) => t.initials !== req.body.initials)
-  ) {
-    return res.status(422).json({ message: "These initials are already in use by another team."})
-  }
+  // E verifica se o token autoriza o cadastro dessas iniciais
+  if (!req.userToken.teams.includes(req.body.initials)) {
+    return res.status(401).json({ message: "You're not authorized to register these initials." });
+  };
 
-  // Se tudo certo, então registra o novo time
+  // Se estiver tudo certo, então registra o novo time
   const newTeam = { ...req.body };
   teams.push(newTeam);
 
