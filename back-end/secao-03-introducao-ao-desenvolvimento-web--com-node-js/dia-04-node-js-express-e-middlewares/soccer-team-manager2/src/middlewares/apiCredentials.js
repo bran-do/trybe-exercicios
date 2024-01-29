@@ -11,6 +11,6 @@ async function apiCredentials(req, res, next) {
   } else {
     res.sendStatus(401);
   }
-};
+}
 
 module.exports = apiCredentials;

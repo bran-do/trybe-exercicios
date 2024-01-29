@@ -1,5 +1,5 @@
 const express = require('express');
-require('express-async-errors')
+require('express-async-errors');
 
 const existingId = require('./middlewares/existingId');
 const validateTeam = require('./middlewares/validateTeam');
@@ -13,7 +13,6 @@ const apiCredentials = require('./middlewares/apiCredentials'); // Vamos solicit
 // Configuração para poder mandar JSON no body
 app.use(express.json());
 
-
 // Endpoint '/teams' com todos os times cadastrados
 app.get('/teams', (req, res) => res.status(200).json({ teams }));
 
@@ -23,14 +22,14 @@ app.use(apiCredentials);
 // Endpoint baseado no 'id' para retornar apenas o time informado nos parâmetros da requisição
 app.get('/teams/:id', existingId, (req, res) => {
   const { id } = req.params;
-  const team = teams.find((team) => team.id === Number(id));
+  const team = teams.find((t) => t.id === Number(id));
 
   res.status(200).json({ team });
-})
+});
 
 // Definindo método POST para cadastrar novos times através de um arquivo JSON
 app.post('/teams', validateTeam, (req, res) => {
-  const newTeam = {...req.body};
+  const newTeam = { ...req.body };
   teams.push(newTeam);
 
   res.status(201).json({ team: newTeam });

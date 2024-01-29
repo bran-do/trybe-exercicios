@@ -2,10 +2,10 @@
 const validateTeam = (req, res, next) => {
   const { name, initials } = req.body;
 
-  if (!name) { return res.status(400).json({ message: "Property 'name' is mandatory." }) };
-  if (!initials) { return res.status(400).json({ message: "Property 'initials' is mandatory" }) };
+  if (!name) { return res.status(400).json({ message: 'Property \'name\' is mandatory.' }); }
+  if (!initials) { return res.status(400).json({ message: 'Property \'initials\' is mandatory' }); }
 
   next();
-}  
+};  
 
 module.exports = validateTeam;
