@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 
-async function apiCredentials(req, res, next) {
+module.exports = async function apiCredentials(req, res, next) {
   const token = req.header('X-API-TOKEN');
   const authdata = await fs.readFile('./authdata.json', { encoding: 'utf-8' });
 
@@ -11,8 +11,6 @@ async function apiCredentials(req, res, next) {
     req.userToken = authorized[token];
     next();
   } else {
-    res.sendStatus(401).json({ message: 'Invalid or expired token.' });
+    res.status(401).json({ message: 'Invalid or expired token.' });
   }
-}
-
-module.exports = apiCredentials;
+};
