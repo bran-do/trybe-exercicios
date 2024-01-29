@@ -29,6 +29,16 @@ app.get('/teams/:id', existingId, (req, res) => {
 
 // Definindo método POST para cadastrar novos times através de um arquivo JSON
 app.post('/teams', validateTeam, (req, res) => {
+
+  // Antes de mais nada, verifica se já existe um time com as inicias fornecidas
+  if (
+    req.teams.teams.includes(req.body.initials)
+    && teams.every((t) => t.initials !== req.body.initials)
+  ) {
+    return res.status(422).json({ message: "These initials are already in use by another team."})
+  }
+
+  // Se tudo certo, então registra o novo time
   const newTeam = { ...req.body };
   teams.push(newTeam);
 
