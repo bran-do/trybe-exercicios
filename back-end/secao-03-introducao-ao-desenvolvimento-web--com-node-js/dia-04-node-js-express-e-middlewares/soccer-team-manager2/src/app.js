@@ -1,28 +1,24 @@
 const express = require('express');
+require('express-async-errors')
+
 const existingId = require('./middlewares/existingId');
 const validateTeam = require('./middlewares/validateTeam');
 
+// Array inicial de times
+const teams = require('./utils/teams');
+
 const app = express();
+const apiCredentials = require('./middlewares/apiCredentials'); // Vamos solicitar um token credencial
 
 // Configuração para poder mandar JSON no body
 app.use(express.json());
 
-// Array inicial de times
-const teams = [
-  {
-    id: 1,
-    name: 'São Paulo Futebol Clube',
-    initials: 'SPF',
-  },
-  {
-    id: 2,
-    name: 'Clube Atlético Mineiro',
-    initials: 'CAM',
-  },
-];
 
 // Endpoint '/teams' com todos os times cadastrados
 app.get('/teams', (req, res) => res.status(200).json({ teams }));
+
+// À partir daqui, um token será exigido para ter acesso as requisições seguintes
+app.use(apiCredentials);
 
 // Endpoint baseado no 'id' para retornar apenas o time informado nos parâmetros da requisição
 app.get('/teams/:id', existingId, (req, res) => {

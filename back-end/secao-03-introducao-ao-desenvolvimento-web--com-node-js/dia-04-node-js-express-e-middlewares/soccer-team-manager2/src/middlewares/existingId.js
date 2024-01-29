@@ -1,3 +1,5 @@
+const teams = require('../utils/teams');
+
 // Adicionando um middleware para verificar a existência do ID passado via requisição
 const existingId = (req, res, next) => {
   const { id } = req.params;
