@@ -28,5 +28,12 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: trybecashdb
+    healthcheck:
+      # Deve aguardar o banco ficar operacional
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 5
     ports:
       - "33060:3306"
+    volumes:
+      - ./trybecash_script.sql:/docker-entrypoint-initdb.d/trybecash_script.sql
