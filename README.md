@@ -129,5 +129,20 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 2-3: _Banco de dados: relacionamentos, pt. 1_
 - [X] 2-4: _Banco de dados: relacionamentos, pt. 2_
 - [X] 2-5: _Banco de dados: relacionamentos, pt. 3 e relatórios avançados_
-- [X] 2-6: _Projeto: Trybefy_ 
+- [X] 2-6: _Projeto: Trybefy_
 
+##### Seção 3: Introdução ao desenvolvimento web com Node.js
+- [X] 3-1: _Node.js: Runtime assíncrono_
+- [X] 3-2: _Node.js: API REST com Express_
+- [X] 3-3: _Node.js: Testes de integração_
+- [X] 3-4: _Node.js: Express e middlewares_
+- [X] 3-5: _Node.js: Express e MySQL_
+- [X] 3-6: _Projeto: Talker Manager_
+
+##### Seção 4: Arquitetura de software: Model, Service e Controller
+- [X] 4-1: _Arquitetura de software: camada Model_
+- [X] 4-2: _Arquitetura de software: refatorando a camada Model_
+- [X] 4-3: _Arquitetura de software: camada Service_
+- [X] 4-4: _Arquitetura de software: refatorando a camada Service_
+- [X] 4-5: _Arquitetura de software: refatorando a camada Controller_
+- [X] 4-6: _Projeto: Store Manager_
