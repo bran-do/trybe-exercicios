@@ -118,14 +118,14 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 
 ##### Seção 1: Docker
-- [X] 1-1: _Utilizando containers no Docker_
-- [X] 1-2: _Manipulando imagens no Docker_
-- [X] 1-3: _Orquestrando containers com o Docker Compose_
+- [X] 1-1: _Docker: utilizando containers_
+- [X] 1-2: _Docker: Manipulando imagens_
+- [X] 1-3: _Docker: Orquestrando containers com o Docker Compose_
 - [X] 1-4: _Projeto: Docker Todo-List_
 
 ##### Seção 2: Introdução à SQL
 - [X] 2-1: _Introdução ao banco de dados_
-- [X] 2-2: _Como atualizar e remover dados de um banco_
+- [X] 2-2: _Banco de dados: Como atualizar e remover dados de um banco_
 - [X] 2-3: _Banco de dados: relacionamentos, pt. 1_
 - [X] 2-4: _Banco de dados: relacionamentos, pt. 2_
 - [X] 2-5: _Banco de dados: relacionamentos, pt. 3 e relatórios avançados_
