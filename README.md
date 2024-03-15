@@ -140,9 +140,19 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 3-6: _Projeto: Talker Manager_
 
 ##### Seção 4: Arquitetura de software: Model, Service e Controller
-- [X] 4-1: _Arquitetura de software: camada Model_
-- [X] 4-2: _Arquitetura de software: refatorando a camada Model_
-- [X] 4-3: _Arquitetura de software: camada Service_
-- [X] 4-4: _Arquitetura de software: refatorando a camada Service_
-- [X] 4-5: _Arquitetura de software: refatorando a camada Controller_
+- [X] 4-1: _Arquitetura de software: Camada Model_
+- [X] 4-2: _Arquitetura de software: Refatorando a camada Model_
+- [X] 4-3: _Arquitetura de software: Camada Service_
+- [X] 4-4: _Arquitetura de software: Refatorando a camada Service_
+- [X] 4-5: _Arquitetura de software: Camada Controller_
 - [X] 4-6: _Projeto: Store Manager_
+
+##### Seção 5: Node.js: ORM e autenticação
+- [X] 5-1: _ORM: Interface da aplicação com o banco de dados_
+- [X] 5-2: _ORM: Associações 1:1 e 1:N_
+- [X] 5-3: _ORM: Associações N:N_
+- [X] 5-4: _JSON Web Token_
+- [X] 5-5: _Projeto: API de Blogs_
+
+##### Seção 6: Masterclass: Implantação de aplicações na nuvem
+- [X] 6-1: _Infraestrutura: Deploy com Railway_
