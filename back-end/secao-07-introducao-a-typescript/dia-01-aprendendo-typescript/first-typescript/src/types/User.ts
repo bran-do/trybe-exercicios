@@ -1,6 +1,6 @@
 export type User = {
-  id: string | number;
-  name: string;
-  profileURL: string;
-  repositories: number;
+  id: string | number,
+  name: string,
+  profileURL: string,
+  repositories: number,
 };
