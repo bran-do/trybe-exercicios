@@ -10,7 +10,8 @@ export default class Person {
   }
 
   set name(newName: string) {
-    newName.length >= 3 && (this._name = newName);
+    if (newName.length < 3) throw new Error('Person name must be at least 3 characters long');
+    this._name = newName;
   }
 
   get birthDate() {
@@ -19,8 +20,10 @@ export default class Person {
 
   set birthDate(date: Date) {
     const now = new Date();
-    if (date <= now && (now.getFullYear() - date.getFullYear() <= 120)) {
-      this._birthDate = date;
-    }
+    if (date > now && (now.getFullYear() - date.getFullYear() > 120)) throw new Error(
+      "Date can't be in the future"
+    );
+
+    this._birthDate = date;
   }
 };

@@ -18,7 +18,7 @@ export default class Teacher extends Person implements Employee {
     this.salary = _salary;
     this._admissionDate = new Date();
     this.registration = this.generateRegistration();
-  };
+  }
 
   get subject(): Subject { return this._subject };
   set subject(newSubject: Subject) { this._subject = newSubject };
@@ -27,22 +27,22 @@ export default class Teacher extends Person implements Employee {
   set registration(newRegistration: string) {
     if (newRegistration.length > 3) throw new Error('Registration must be 3 characters long');
     this._registration = newRegistration;
-  };
+  }
 
   get salary(): number { return this._salary };
   set salary(newSalary) {
     if (newSalary < 0) throw new Error('Salary must be greater than 0');
     this._salary = newSalary;
-  };
+  }
 
   get admissionDate() { return this._admissionDate };
   set admissionDate(date: Date) {
     const now = new Date();
     if (date > now) throw new Error("Date can't be in the future")
     this._admissionDate = date;
-  };
+  }
 
   generateRegistration(): string {
     return Math.floor(100 + (999 - 100) * Math.random()).toString()
-  };
+  }
 }

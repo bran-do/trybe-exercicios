@@ -1,7 +1,7 @@
 import Person from './Person';
 
 // 2. Cria uma classe que represente uma pessoa estudante para que ela herde da classe 'Person'
-class Student extends Person {
+export default class Student extends Person {
   private _enrollment: string;
   private _examGrades: [number, number, number, number];
   private _assignmentGrades: [number, number];
