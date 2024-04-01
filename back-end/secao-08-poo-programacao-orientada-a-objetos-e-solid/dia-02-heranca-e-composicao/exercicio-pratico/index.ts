@@ -1,34 +1,4 @@
-class Student {
-  registration: string;
-  name: string;
-  testGrades: [number, number, number, number];
-  workGrades: [number, number];
-
-  constructor(
-    registration: string,
-    name: string,
-    testGrades: [number, number, number, number],
-    workGrades: [number, number]
-  ) {
-    this.registration = registration;
-    this.name = name;
-    this.testGrades = testGrades;
-    this.workGrades = workGrades;
-  }
-
-  gradeSum() {
-    const testGradesSum = this.testGrades.reduce((acc, curr) => acc + curr);
-    const workGradesSum = this.workGrades.reduce((acc, curr) => acc + curr);
-    return testGradesSum + workGradesSum;
-  }
-
-  averageGrade() {
-    const gradesSum = this.gradeSum();
-    return gradesSum / 6;
-  }
-};
-
-// 1. Crie uma nova classe cujos objetos representarão uma pessoa no sistema
+// 1. Crie uma classe cujos objetos representarão uma pessoa no sistema
 class Person {
   constructor(
     private _name: string,
@@ -55,34 +25,41 @@ class Person {
   }
 };
 
-class Costumer {
-  name: string;
-}
+// 2. Cria uma classe que represente uma pessoa estudante para que ela herde da classe 'Person'
+class Student extends Person {
+  private _enrollment: string;
+  private _examGrades: [number, number, number, number];
+  private _assignmentGrades: [number, number];
 
-class Product {
-  name: string;
-  price: number;
-}
+  constructor(name: string, birthDate: Date) {
+    super(name, birthDate);
+    this._enrollment = this.generateEnrollment()
+  };
 
-class Order {
-  costumer: Costumer;
-  products: Product[];
-  paymentMethod: string;
-  discount?: number;
-
-  getTotal() {
-    const productPrices = this.products.map((product) => product.price);
-    const totalAmount = productPrices.reduce((acc, curr) => acc + curr);
-    return totalAmount;
+  generateEnrollment() {
+    return Math.floor(1000 + (9999 - 1000) * Math.random()).toString();
   }
 
-  getTotalWithDiscount() {
-    if (this.discount) {
-      const totalAmount = this.getTotal();
-      const discountToApply = this.discount * totalAmount;
-      return totalAmount - discountToApply;
-    }
+  get enrollment(): string { return this._enrollment }
 
-    return this.getTotal();
+  get examGrades(): number[] { return this._examGrades }
+  set examGrades(grades: [number, number, number, number]) {
+    this._examGrades = grades;  
   }
-}
+
+  get assignmentGrades(): number[] { return this._assignmentGrades }
+  set assignmentGrades(grades: [number, number]) {
+    this._assignmentGrades = grades;
+  }
+
+  gradeSum() {
+    const examGradesSum = this._examGrades.reduce((acc, curr) => acc + curr);
+    const workGradesSum = this._assignmentGrades.reduce((acc, curr) => acc + curr);
+    return examGradesSum + workGradesSum;
+  }
+
+  averageGrade() {
+    const gradesSum = this.gradeSum();
+    return gradesSum / 6;
+  }
+};
