@@ -156,3 +156,10 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 ##### Seção 6: Masterclass: Implantação de aplicações na nuvem
 - [X] 6-1: _Infraestrutura: Deploy com Railway_
+
+##### Seção 7: Introdução a TypeScript
+- [X] 7-1: _Aprendendo TypeScript_
+- [X] 7-2: _Introdução a Generics_
+- [X] 7-3: _API REST com Express, JWT, Sequelize e TypeScript_
+- [X] 7-4: _Testando aplicações com TypeScript_
+- [X] 7-5: _Projeto: Trybesmith_
