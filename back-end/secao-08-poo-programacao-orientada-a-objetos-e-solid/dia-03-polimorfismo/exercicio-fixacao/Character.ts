@@ -3,8 +3,16 @@ Suponha que você está modelando os personagens do jogo de luta multijogadores 
 */
 
 // 1 - Crie uma classe abstrata Character que tenha os métodos abstratos talk(): void e specialMove(): void.
+// 1.2 - Crie um método estático que receba como parâmetro character: Character e, dentro dele, chame os métodos talk e specialMove para apresentar o personagem.
 abstract class Character {
-  constructor(public name: string) {};
+  constructor(public name: string) {
+    Character.characterIntroduction(this);
+  };
+
+  private static characterIntroduction(character: Character) {
+    character.talk();
+    character.specialMove();
+  };
 
   abstract talk(): void;
   abstract specialMove(): void;
@@ -34,3 +42,7 @@ yoshi.specialMove();
 const samus = new LongRangeCharacter('Samus');
 samus.talk();
 samus.specialMove();
+
+// 4.2 - Agora, ao invés de acionarmos os métodos talk e specialMove individualmente a partir das instâncias, acione-os por meio do método estático criado no exercício anterior.
+const yoshi2 = new MeleeCharacter('Yoshi');
+const samus2 = new LongRangeCharacter('Samus');
