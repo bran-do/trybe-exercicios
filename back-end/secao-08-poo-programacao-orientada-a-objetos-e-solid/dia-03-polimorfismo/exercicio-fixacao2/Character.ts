@@ -1,3 +1,5 @@
+import { ModelResponse } from "./ModelResponseType";
+
 // Utilize a estrutura a seguir nos exercícios dessa seção:
 interface Character {
   name: string;
@@ -12,11 +14,11 @@ const db: DbCharacter[] = [];
 
 // 1 - Crie uma interface chamada IModel que defina as operações básicas de um CRUD para a entidade Character.
 interface IModel {
-  create(character: Character): DbCharacter;
-  getAll(): DbCharacter[];
-  getById(id: number): DbCharacter | void;
-  update(id: number, data: Character): DbCharacter | void;
-  exclude(id: number): void;
+  create(character: Character): ModelResponse<DbCharacter>;
+  getAll(): ModelResponse<DbCharacter[]>;
+  getById(id: number): ModelResponse<DbCharacter>;
+  update(id: number, data: Character): ModelResponse<DbCharacter>;
+  exclude(id: number): ModelResponse<void>;
 };
 
 // 2 - Crie uma classe LocalDbModel que implemente a interface IModel.
@@ -24,7 +26,7 @@ class LocalDbModel implements IModel {
   private static lastId = 0;
 
   private static newId() { return this.lastId++ };
-  private static notFoundError() { throw new Error('Character not found.') };
+  private static notFoundResponse = { status: 404, data: { message: 'Character not found.' } };
 
   create(character: Character) {
     const newCharacter: DbCharacter = {
@@ -34,33 +36,34 @@ class LocalDbModel implements IModel {
     };
 
     db.push(newCharacter);
-    return newCharacter;
+    return { status: 201, data: newCharacter };
   }
 
-  getAll() { return db }
+  getAll() { return { status: 200, data: db } };
 
   getById(id: number) {
     const character = db.find((char) => char.id === id);
-    if (!character) { LocalDbModel.notFoundError() };
-    return character;
+    if (!character) return LocalDbModel.notFoundResponse;
+
+    return { status: 200, data: character };
   }
 
   update(id: number, data: Character) {
     const charIndex = db.findIndex((char) => char.id === id);
     const character = db[charIndex];
-    if (!character) { LocalDbModel.notFoundError() };
+    if (!character) return LocalDbModel.notFoundResponse;
 
     character.name = data.name;
     character.specialMove = data.specialMove;
-    return character;
+    return { status: 200, data: character };
   }
 
   exclude(id: number) {
     const charIndex = db.findIndex((char) => char.id === id);
-    if (db[charIndex] === undefined) { LocalDbModel.notFoundError() };
+    if (db[charIndex] === undefined) return LocalDbModel.notFoundResponse;
 
     db.splice(charIndex, 1);
-    console.log('Character succesfully deleted.')
+    return { status: 200, data: { message: `Character of id ${id} deleted.` }};
   }
 };
 
