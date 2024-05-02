@@ -114,7 +114,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 8-1: _Projeto: App de Receitas_
 
 
-## Back-end ⏳
+## Back-end ✅
 
 
 ##### Seção 1: Docker
@@ -163,3 +163,15 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 7-3: _API REST com Express, JWT, Sequelize e TypeScript_
 - [X] 7-4: _Testando aplicações com TypeScript_
 - [X] 7-5: _Projeto: Trybesmith_
+
+##### Seção 8: Programação Orientada a Objetos (POO) e SOLID
+- [X] 8-1: _Introdução à Orientação a Objetos_
+- [X] 8-2: _Herança e composição_
+- [X] 8-3: _Polimorfismo_
+- [X] 8-4: _SOLID: Introdução e princípios S, O e D_
+- [X] 8-5: _SOLID: Princípios L e I_
+- [X] 8-6: _Projeto: Trybers and Dragons_
+
+##### Seção 9: TFC- Trybe Futebol Clube
+- [X] 9-1: _Express com classes_
+- [X] 9-2: _Projeto: TFC - Trybe Futebol Clube_ 
